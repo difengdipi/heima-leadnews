@@ -27,10 +27,8 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
 
         //2.判断是否是登录
         if(request.getURI().getPath().contains("/login")){
-            //放行
             return chain.filter(exchange);
         }
-
 
         //3.获取token
         String token = request.getHeaders().getFirst("token");
@@ -56,7 +54,6 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
             return response.setComplete();
         }
 
-        //6.放行
         return chain.filter(exchange);
     }
 

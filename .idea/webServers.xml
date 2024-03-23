@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="af8f4723-5c5e-484f-a04f-3cdf6fa6e952" name="https://gitee.com/zh2358853434/luoluo-toutiao.git" url="https://gitee.com/zh2358853434/luoluo-toutiao.git">
+        <fileTransfer accessType="LOCAL" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>
