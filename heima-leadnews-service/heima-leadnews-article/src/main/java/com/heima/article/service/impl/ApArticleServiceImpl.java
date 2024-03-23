@@ -32,13 +32,13 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
 
     /**
      * 加载文章列表
-     * @param dto
+     * @param articleHomeDto
      * @param type
      * @return
      */
-    public ResponseResult load(ArticleHomeDto dto,Short type){
+    public ResponseResult load(ArticleHomeDto articleHomeDto,Short type){
         //1.进行参数的校验
-        Integer size = dto.getSize();
+        Integer size = articleHomeDto.getSize();
         if (size == null || size == 0) {
             size = 10 ;
         }
@@ -49,14 +49,14 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
             type = ArticleConstants.LOADTYPE_LOAD_MORE;
         }
         //频道参数的校验
-        if (StringUtils.isBlank(dto.getTag())) {
-            dto.setTag(ArticleConstants.DEFAULT_TAG);
+        if (StringUtils.isBlank(articleHomeDto.getTag())) {
+            articleHomeDto.setTag(ArticleConstants.DEFAULT_TAG);
         }
         //时间的校验
-        if (dto.getMaxBehotTime() == null) dto.setMaxBehotTime(new Date());
-        if (dto.getMinBehotTime() == null) dto.setMaxBehotTime(new Date());
+        if (articleHomeDto.getMaxBehotTime() == null) articleHomeDto.setMaxBehotTime(new Date());
+        if (articleHomeDto.getMinBehotTime() == null) articleHomeDto.setMinBehotTime(new Date());
         //2.查询
-        List<ApArticle> apArticles = apArticleMapper.loadArticleList(dto, type);
+        List<ApArticle> apArticles = apArticleMapper.loadArticleList(articleHomeDto, type);
         //3.返回结果
         return ResponseResult.okResult(apArticles);
     }

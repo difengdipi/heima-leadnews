@@ -17,9 +17,9 @@ public interface ApArticleMapper extends BaseMapper<ApArticle> {
 
     /**
      * 加载文章最新列表
-     * @param articleHomeDto 1.加载更多 2.加载最新
+     * @param dto 1.加载更多 2.加载最新
      * @param type
      * @return
      */
-    public List<ApArticle> loadArticleList(ArticleHomeDto articleHomeDto,Short type);
+    public List<ApArticle> loadArticleList(ArticleHomeDto dto,Short type);
 }

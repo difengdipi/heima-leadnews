@@ -27,10 +27,8 @@
     </resultMap>
 
     <select id="loadArticleList" resultMap="resultMap">
-        SELECT
-        aa.*
-        FROM
-        `ap_article` aa
+        SELECT aa.* FROM
+        ap_article aa
         LEFT JOIN ap_article_config aac ON aa.id = aac.article_id
         <where>
             and aac.is_delete != 1
