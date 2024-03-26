@@ -20,7 +20,7 @@ import reactor.core.publisher.Mono;
 public class AuthorizeFilter implements Ordered, GlobalFilter {
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        log.info("启用过滤器");
+        log.info("app-service启用过滤器");
         //1.获取request和response对象
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
