@@ -40,7 +40,6 @@ public class ArticleHomeController {
     @PostMapping("/loadnew")
     public ResponseResult loadnew(@RequestBody ArticleHomeDto articleHomeDto){
         log.info("加载最新");
-
         return apArticleService.load(articleHomeDto,ArticleConstants.LOADTYPE_LOAD_NEW);
     }
 

@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="af8f4723-5c5e-484f-a04f-3cdf6fa6e952" name="https://gitee.com/zh2358853434/luoluo-toutiao.git" url="https://gitee.com/zh2358853434/luoluo-toutiao.git">
-        <fileTransfer accessType="LOCAL" port="0" />
+        <fileTransfer mountedRoot="D:\Users\86183\IdeaProjects\code\heima-leadnews" accessType="MOUNT" port="0" />
       </webServer>
     </option>
   </component>

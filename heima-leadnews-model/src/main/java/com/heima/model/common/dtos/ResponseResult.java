@@ -5,9 +5,7 @@ import com.heima.model.common.enums.AppHttpCodeEnum;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 通用的结果返回类
@@ -117,12 +115,13 @@ public class ResponseResult<T> implements Serializable {
         this.errorMessage = errorMessage;
     }
 
-    public T getData() {
-        return data;
-    }
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public T getData() {
+       return this.data;
     }
 
     public String getHost() {

@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EntryPointsManager">
     <list size="1">
@@ -15,6 +14,8 @@
         <option value="$PROJECT_DIR$/heima-leadnews-basic/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-gateway/heima-leadnews-wemedia-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-wemedia/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-schedule/pom.xml" />
+        <option value="$PROJECT_DIR$/heima-leadnews-service/heima-leadnews-schedule/pom.xml" />
       </list>
     </option>
   </component>
