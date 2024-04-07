@@ -16,6 +16,7 @@
         <module>heima-leadnews-article</module>
         <module>heima-leadnews-wemedia</module>
         <module>heima-leadnews-schedule</module>
+        <module>heima-leadnews-search</module>
     </modules>
 
     <properties>
@@ -28,6 +29,12 @@
         <dependency>
             <groupId>com.heima</groupId>
             <artifactId>heima-leadnews-model</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>checker-qual</artifactId>
+                    <groupId>org.checkerframework</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.heima</groupId>
@@ -36,6 +43,12 @@
         <dependency>
             <groupId>com.heima</groupId>
             <artifactId>heima-leadnews-feign-api</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>HdrHistogram</artifactId>
+                    <groupId>org.hdrhistogram</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!-- Spring boot starter -->
         <dependency>
@@ -71,6 +84,12 @@
         <dependency>
             <groupId>io.seata</groupId>
             <artifactId>seata-spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <artifactId>checker-qual</artifactId>
+                    <groupId>org.checkerframework</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

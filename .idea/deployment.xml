@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="https://gitee.com/zh2358853434/luoluo-toutiao.git" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" serverName="https://gitee.com/zh2358853434/luoluo-toutiao.git" uploadOnCheckin="af8f4723-5c5e-484f-a04f-3cdf6fa6e952" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="https://gitee.com/zh2358853434/luoluo-toutiao.git">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="https://gitee.com/zh2358853434/luoluo-toutiao.git" />
   </component>
 </project>
