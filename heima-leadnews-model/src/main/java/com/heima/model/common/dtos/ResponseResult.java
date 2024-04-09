@@ -25,7 +25,7 @@ public class ResponseResult<T> implements Serializable {
         this.code = 200;
     }
 
-    public ResponseResult(Integer code, T data) {
+    public ResponseResult(Integer page, Integer code, T data) {
         this.code = code;
         this.data = data;
     }
