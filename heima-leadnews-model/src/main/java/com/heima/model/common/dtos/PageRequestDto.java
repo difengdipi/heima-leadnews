@@ -9,7 +9,6 @@ public class PageRequestDto {
 
     protected Integer size;
     protected Integer page;
-
     public void checkParam() {
         if (this.page == null || this.page < 0) {
             setPage(1);
