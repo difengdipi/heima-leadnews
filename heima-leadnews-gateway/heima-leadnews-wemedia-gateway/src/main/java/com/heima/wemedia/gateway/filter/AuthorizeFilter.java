@@ -53,11 +53,12 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
             //获取用户Id
             Object userId = claimsBody.get("id");
             //储存到header中
-            ServerHttpRequest.Builder headers = request.mutate().headers(httpHeaders -> {
+            //存储header中
+            ServerHttpRequest serverHttpRequest = request.mutate().headers(httpHeaders -> {
                 httpHeaders.add("userId", userId + "");
-            });
-            exchange.mutate().request((ServerHttpRequest) headers);
-
+            }).build();
+            //重置请求
+            exchange.mutate().request(serverHttpRequest);
         } catch (Exception e) {
             e.printStackTrace();
         }

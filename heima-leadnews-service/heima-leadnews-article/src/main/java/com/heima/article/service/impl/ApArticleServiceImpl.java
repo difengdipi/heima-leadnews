@@ -113,7 +113,7 @@ public class ApArticleServiceImpl extends ServiceImpl<ApArticleMapper, ApArticle
 
         }
         //异步调用生成Html文件上传到minio1中
-        articleFreemarkerService.buildArticleToMinio(apArticle, dto.getContent());
+        articleFreemarkerService.buildArticleToMinIO(apArticle, dto.getContent());
 
         //3.结果返回 文章的id
         return ResponseResult.okResult(apArticle.getId());
